@@ -1,0 +1,68 @@
+.rn_CapabilityDetector .MessageContainer{font-size: 1.5em;line-height: 1em;padding: 10px;text-align: center;border-style: solid;border-width: 2px;}
+.rn_ChatPrintButton img{vertical-align: middle;}
+.rn_ChatSoundButton img{vertical-align: middle;}
+.rn_ChatSoundButton .rn_FlashContainer{position: absolute;top: -500px;left: -500px;}
+.rn_ChatDisconnectButton img{vertical-align: middle;}
+.rn_ChatCancelButton img{vertical-align: middle;}
+.rn_ChatCancelButton{float: right;margin:0 1em;}
+.rn_ChatServerConnect{text-align:center;}
+.rn_ChatServerConnect{background:#EFEFF4 url(../../themes/Upgrade/images/layout/whitePixel.png) repeat-x scroll 0 0;border:solid #BBBBBB;border-width:1px 0;line-height:1.25em;margin:0 0 1em;padding:5px;}
+.rn_ChatResumeSessionDialog{width: 358px;}
+.rn_ChatQueueWaitTime{background:#EFEFF4 url(../../themes/Upgrade/images/layout/whitePixel.png) repeat-x scroll 0 0;border:1px solid #BBBBBB;border-width:1px;padding:5px;margin:0 1em 1em 1em;line-height:1.25em;text-align:left;}
+.rn_ChatQueueWaitTime .rn_ChatQueuePosition, .rn_ChatQueueWaitTime .rn_ChatEstimatedWaitTime, .rn_ChatQueueWaitTime .rn_ChatAverageWaitTime{padding-right:2px;}
+.rn_BrowserWarning{color:#FF0000;}
+.rn_ChatEngagementStatus{background:#EFEFF4 url(../../themes/Upgrade/images/layout/whitePixel.png) repeat-x scroll 0 0;border:solid #BBBBBB;border-width:1px 0;padding:5px;line-height:1.25em;margin:0 0 1em;}
+.rn_ChatEngagementStatus .rn_SearchingDetailMessage, .rn_ChatEngagementStatus .rn_RequeuedDetailMessage, .rn_ChatEngagementStatus .rn_CanceledUserDetailMessage, .rn_ChatEngagementStatus .rn_CanceledSelfServiceDetailMessage, .rn_ChatEngagementStatus .rn_CanceledNoAgentsAvailDetailMessage, .rn_ChatEngagementStatus .rn_CanceledQueueTimeoutDetailMessage, .rn_ChatEngagementStatus .rn_CanceledDequeuedDetailMessage{padding: 10px;}
+.rn_ChatEngagementStatus .rn_StatusPrefix, .rn_ChatEngagementStatus .rn_Status{font-weight:bolder;}
+@media print{.rn_ChatEngagementStatus{display:none;}
+}
+.rn_VirtualAssistantAvatar{float: left;max-height: 100px;max-width: 81px;border: solid #bbb;border-width: 1px 0 0 1px;}
+.rn_VirtualAssistantAvatar > .rn_DefaultEmotion{height: 100px;width: 81px;position: relative;top: 0;left: 0;}
+.rn_VirtualAssistantAvatar > .rn_Emotion{margin-top: -100px;height: 100px;width: 81px;position: relative;top: 0;left: 0;}
+.rn_VirtualAssistantAvatar > div.listen{background: #fff url(../../themes/Upgrade/images/avatar_sprite.png) 0 0 no-repeat;}
+.rn_VirtualAssistantAvatar > div.happy{background: #fff url(../../themes/Upgrade/images/avatar_sprite.png) 0 -100px no-repeat;}
+.rn_VirtualAssistantAvatar > div.stop{background: #fff url(../../themes/Upgrade/images/avatar_sprite.png) 0 -200px no-repeat;}
+.rn_VirtualAssistantAvatar > div.angry{background: #fff url(../../themes/Upgrade/images/avatar_sprite.png) 0 -300px no-repeat;}
+.rn_VirtualAssistantAvatar > div.chat_default{background: #fff url(/euf/assets/images/avatar_photo.jpg) -15px 0 no-repeat;}
+.rn_ChatTranscript{overflow:auto;height:15em;}
+.rn_ChatTranscript .rn_MessagePost{clear:both;display:block;}
+.rn_ChatTranscript ol, .rn_ChatTranscript ul, .rn_ChatTranscript dl{clear:both;display:block;}
+.rn_ChatTranscript{background-color: white;border:1px solid #CCCCCC;padding:0.3em;margin:0 1em 1em;}
+.rn_ChatTranscript .rn_ChatTranscriptBlock .rn_AgentTextPrefix, .rn_ChatTranscript .rn_ChatTranscriptBlock .rn_Action{color: #000099;}
+.rn_ChatTranscript .rn_ChatTranscriptBlock .rn_UserTextPrefix{color: #990000;}
+.rn_ChatTranscript .rn_ChatTranscriptBlock .rn_OffTheRecordMessage{color: #008000;}
+.rn_ChatTranscript .rn_ChatTranscriptBlock blockquote, .rn_ChatTranscript .rn_ChatTranscriptBlock ul, .rn_ChatTranscript .rn_ChatTranscriptBlock ol, .rn_ChatTranscript .rn_ChatTranscriptBlock dl{margin:1em;}
+.rn_ChatTranscript .rn_ChatTranscriptBlock ol, .rn_ChatTranscript .rn_ChatTranscriptBlock ul, .rn_ChatTranscript .rn_ChatTranscriptBlock dl{margin-left:2em;}
+.rn_ChatTranscript .rn_ChatTranscriptBlock ol li{list-style: decimal outside;}
+.rn_ChatTranscript .rn_ChatTranscriptBlock ul li{list-style: disc outside;}
+@media print{.rn_ChatTranscript, .rn_ChatTranscript .rn_ChatTranscriptBlock{border:0;height:auto;margin:0;overflow:visible;word-wrap:break-word;}
+}
+.rn_ChatAgentStatus{background:#EFEFF4 url(../../themes/Upgrade/images/layout/whitePixel.png) repeat-x scroll 0 0;border:solid #BBBBBB;border-width: 1px 1px 0;padding:5px;line-height:1.25em;margin: 0 1em 0;}
+@media print{.rn_ChatAgentStatus{display:none;}
+}
+.rn_ChatRequestEmailResponseButton{float: right;margin:1em 5px;}
+.rn_ChatPostMessage textarea{overflow: auto;resize: none;}
+.rn_ChatPostMessage span{display: block;}
+.rn_ChatPostMessage legend{display: none;}
+.rn_ChatPostMessage textarea{width:100%;padding:0;}
+.rn_ChatPostMessage{margin:0 1.2em 0 1em;}
+@media print{.rn_ChatPostMessage{display:none;}
+}
+.rn_ChatAttachFileButton img{vertical-align: middle;margin-top: -3px;margin-bottom: -3px;}
+.rn_ChatAttachFileButton input[type="file"]{display: none;}
+.rn_ChatFileAttachContent input[type="file"]{width: 275px;}
+.rn_ChatFileAttachContent span{display:block;}
+.rn_ChatAttachFileButton form button{margin: auto;}
+.rn_ChatAttachFileButtonForm div{display: inline;}
+.rn_FileAttachmentUpload label{display:none;}
+.rn_ChatFileAttachContent{width: 325px;}
+.rn_ChatAttachFileButton{margin: 1em 5px;}
+.rn_ChatAttachFileButtonContent,.rn_ChatAttachFileButtonForm, .rn_ChatAttachFileButtonShown{display:inline;}
+.rn_ChatSendButton img{vertical-align: middle;margin-top: -3px;margin-bottom: -3px;}
+.rn_ChatSendButton{margin:1em 5px;}
+.rn_ChatSendButtonShown{display: inline;}
+@media print{.rn_ChatSendButton{display:none;}
+}
+.rn_ChatStatus{font-size: 1.333em;font-weight: bold;line-height: 1.4em;}
+.rn_ChatHours .rn_HoursBlock{margin: 15px 0 0 0;}
+.rn_ChatHours .rn_HoursLabel{color:#404040;font-size:1em;font-weight:bold;line-height:1.3em;}

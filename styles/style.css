@@ -1,0 +1,486 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto;
+  transition: all 0.1s;
+}
+button {
+  border: unset;
+  outline: unset;
+  cursor: pointer;
+}
+
+#root {
+  background: #111325;
+  min-height: 100vh;
+  padding: 0px 30px;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #f3f4f6;
+}
+
+body::-webkit-scrollbar-track {
+  background: #111325;
+}
+
+* {
+  scrollbar-color: #f3f4f6 #111325 !important;
+}
+
+/*________________________________________________
+
+ ⏸Header Style 👇
+___________________________________________________*/
+header {
+  display: flex;
+  padding: 30px 0px;
+  justify-content: end;
+}
+
+header > .login-button {
+  padding: 12px 30px;
+  font-size: 17px;
+  font-weight: 500;
+  background: transparent;
+  color: #ffffff;
+  border: 2.5px solid #eeeeee;
+  border-radius: 25px;
+  letter-spacing: 1px;
+}
+header > .login-button:hover {
+  background: #eeeeee;
+  color: #111111;
+}
+/*________________________________________________
+
+ ▶ Header Style 👆
+___________________________________________________*/
+
+/*________________________________________________
+
+ ⏸Intro Text Style 👇
+___________________________________________________*/
+/* Intro Text */
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  padding: 30px 0px;
+  color: #ffffff;
+}
+.intro-text > p {
+  text-align: center;
+  width: 700px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.intro-text > p > a {
+  color: #aec4ff;
+}
+.intro-text > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.intro-text > div > button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  border: 2.5px solid #4452fe;
+  background: transparent;
+  color: #ffffff;
+}
+
+.intro-text > div > button:first-child {
+  background: #4452fe;
+}
+.intro-text > div > button:first-child:hover {
+  background: transparent;
+}
+.intro-text > div > button:last-child:hover {
+  background: #4452fe;
+}
+
+/*________________________________________________
+
+ ▶ Intro Text Style 👆
+___________________________________________________*/
+
+/*________________________________________________
+
+ ⏸ Charts Illustrative Style 👇
+___________________________________________________*/
+.charts-illustrative {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.charts-illustrative > .chart-1 {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.charts-illustrative > .chart-1::after {
+  content: "";
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #111325 66.15%);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.charts-illustrative > .chart-1 > img {
+  width: 885px;
+}
+
+.charts-illustrative > .chart2Column {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 990px;
+  margin: auto;
+  gap: 2.5%;
+  color: #eeeeee;
+}
+
+.charts-illustrative > .chart-3 {
+  justify-content: flex-end !important;
+}
+
+.charts-illustrative > .chart2Column > .image {
+  width: 60%;
+}
+
+.charts-illustrative > .chart2Column > .image > img {
+  width: 100%;
+}
+
+.charts-illustrative > .chart2Column > .text {
+  max-width: 30%;
+}
+.charts-illustrative > .chart2Column > .text > p {
+  text-align: center;
+  text-align: left;
+  font-weight: 500;
+  line-height: 25px;
+  margin-top: 7px;
+  margin-bottom: 15px;
+}
+.charts-illustrative > .chart2Column > .text > h6 {
+  color: #555555;
+}
+.charts-illustrative > .chart2Column > .text > button {
+  width: 100%;
+  height: 50px;
+  background: #4452fe;
+  border: 2.5px solid #4452fe;
+  color: #ffffff;
+}
+
+.charts-illustrative > .chart2Column > .text > button:hover {
+  background: transparent;
+}
+
+/*________________________________________________
+
+ ▶ Charts Illustrative Style 👆
+___________________________________________________*/
+
+/*________________________________________________
+
+ ⏸Accordion Style 👇
+___________________________________________________*/
+.accordion {
+  padding-bottom: 120px;
+  width: 767px;
+  margin: auto;
+}
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  border-bottom: 2px solid #1a252f;
+}
+.tab:last-child {
+  border-bottom: 2px solid transparent;
+}
+
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  font-weight: bold;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 7px;
+}
+
+.tab-label:hover {
+  background: #202444;
+}
+
+.tab-label::before {
+  content: "❯";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  transition: all 0.35s;
+}
+
+.tab-content {
+  max-height: 0;
+  color: #bec8d2;
+  transition: all 0.35s;
+}
+
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e50;
+  cursor: pointer;
+}
+.tab-close:hover {
+  background: #1a252f;
+}
+
+input.accordion-input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+input.accordion-input:checked + .tab-label {
+  background: #1a252f;
+}
+
+input.accordion-input:checked + .tab-label::before {
+  margin-bottom: -6px;
+  padding-left: 6px;
+  transform: rotate(90deg);
+}
+
+input.accordion-input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 27px;
+}
+
+/*________________________________________________
+
+ ▶ Accordion Style 👆
+___________________________________________________*/
+
+/*________________________________________________
+
+ ⏸Pricing Boxes Styles 👇
+___________________________________________________*/
+.pricing {
+  padding-bottom: 100px;
+}
+.boxes {
+  width: 885px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding-bottom: 60px;
+}
+.boxes > .box {
+  width: 100%;
+  background: #1a1f34;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 20px;
+  padding: 15px;
+  border: 2px solid transparent;
+}
+.boxes > .box1 {
+  background: #111325 !important;
+  border: 2px solid #4452fe;
+}
+.boxes > .box > h5 {
+  font-weight: medium;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.boxes > .box > h5 > img {
+  width: 30px;
+}
+.boxes > .box > h2 {
+  color: #808ab8;
+}
+.boxes > .box > .whats-included {
+  border-bottom: 1px solid #252b45;
+  padding-bottom: 20px;
+}
+.boxes > .box > p {
+  font-size: 14.2px;
+  color: #808ab8;
+  border-bottom: 1px solid #252b45;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.pricing > .button-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.pricing > .button-div > button {
+  width: 200px;
+  height: 50px;
+  border: 2.5px solid #4452fe;
+  background: #4452fe;
+  color: #ffffff;
+}
+
+.pricing > .button-div > button:hover {
+  background: transparent;
+}
+/*________________________________________________
+
+ ▶ Pricing Style 👆
+___________________________________________________*/
+
+/*________________________________________________
+
+ ⏸Testimonial Style 👇
+___________________________________________________*/
+.testimonials-wrapper {
+  padding-bottom: 200px;
+}
+
+.testimonials {
+  color: #eee;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 5px;
+  padding: 15px 0px;
+  position: relative;
+}
+
+.testimonial {
+  width: 400px;
+  min-height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  margin: auto;
+  transition: all 0.5s;
+}
+
+.testimonial.hide {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transform: scaleY(0);
+}
+.testimonial.show {
+  z-index: 1;
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.testimonial > .image {
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+.testimonial > .image::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: url("../assets/images/testimonial-icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  transform: rotate(9deg);
+  top: -5px;
+  left: -6px;
+}
+
+.testimonial > .image > img {
+  width: 100%;
+  z-index: 1;
+  height: 100%;
+  border-radius: 100%;
+}
+.testimonial > .review-text {
+  font-style: normal;
+  padding-top: 15px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #808ab8;
+}
+
+#testimonial-togglers {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#testimonial-togglers > .toggler {
+  min-width: 11px;
+  min-height: 11px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#testimonial-togglers > .toggler.inactive {
+  background: #ffffff50;
+}
+#testimonial-togglers > .toggler.active {
+  background: #dddddd;
+}
+
+#testimonial-togglers > .toggler:hover {
+  background: #dddddd;
+}
+/*________________________________________________
+
+ ▶ Testimonial Style 👆
+___________________________________________________*/

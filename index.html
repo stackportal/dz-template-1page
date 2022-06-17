@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DZ</title>
+
+    <!-- Google Font - Roboto 👇 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Font - Roboto 👆 -->
+
+    <!-- Styles CSS Files Included here -->
+    <link rel="stylesheet" href="styles/effect.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/login-popup.css" />
+    <link rel="stylesheet" href="styles/register-popup.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <!-- Styles CSS Files Included here -->
+  </head>
+  <body>
+    <main id="root">
+      <!---------------------------------
+       ---------   Header 👇    ---------
+       --------------------------------->
+      <header data-effectJs="fade-down" class="2000">
+        <button class="login-button">Login</button>
+      </header>
+      <!---------------------------------
+       ---------   Header 👆    ---------
+       --------------------------------->
+
+      <!---------------------------------
+       ---------  Intro Text 👇    ------
+       --------------------------------->
+      <section data-effectJs="fade-down" class="2000 intro-text">
+        <h3>Get Promoted and Stand Out!</h3>
+        <p>
+          Imagine a stream of employers coming your way, looking to hire and
+          grow their enterprises using your skills and talents. Get noticed and
+          connect with your industry using this service to advertise and
+          accelerate your career.
+          <a href="#">Get started in less than 1 minute.</a>
+        </p>
+        <div>
+          <button onclick="showRegisterModals()">Okay, show me!</button>
+          <button onclick="showRegisterModals()">
+            Yes, but tell me more...
+          </button>
+        </div>
+      </section>
+      <!---------------------------------
+       --------- Intro Text  👆    ------
+       --------------------------------->
+
+      <!---------------------------------
+       ---  Charts Illustrative 👇    ---
+       --------------------------------->
+      <section data-effectJs="fade-up" class="2000 charts-illustrative">
+        <div class="chart-1">
+          <img src="assets/images/chart1.png" alt="" />
+        </div>
+
+        <div class="chart-2 chart2Column">
+          <div data-effectJs="fade-left" class="1500 image">
+            <img src="assets/images/chart2.png" alt="" />
+          </div>
+          <div data-effectJs="fade-right" class="1500 text">
+            <h6>Expect:</h6>
+            <p>
+              New problems, new opportunities, new adventures! New people and
+              ideas to connect and grow with.
+            </p>
+            <button onclick="showRegisterModals()">Okay, show me!</button>
+          </div>
+        </div>
+
+        <div class="chart-3 chart2Column">
+          <div data-effectJs="fade-left" class="1500 text">
+            <h6>Expect:</h6>
+            <p>
+              Get known and stand out in your industry while increasing your
+              value, paycheck and terms.
+            </p>
+            <button onclick="showRegisterModals()">Okay, show me!</button>
+          </div>
+          <div class="1000 image" data-effectJs="fade-right">
+            <img src="assets/images/chart3.png" alt="" />
+          </div>
+        </div>
+
+        <div class="chart-4 chart2Column">
+          <div class="1500 image" data-effectJs="fade-left">
+            <img src="assets/images/chart4.png" alt="" />
+          </div>
+          <div class="1500 text" data-effectJs="fade-right">
+            <h6>Expect:</h6>
+            <p>
+              Chances to find more meaningful opportunities. Make new options,
+              choices and confidence from being in demand.
+            </p>
+            <button onclick="showRegisterModals()">Okay, show me!</button>
+          </div>
+        </div>
+      </section>
+      <!---------------------------------
+       ---  Charts Illustrative 👆    ---
+       --------------------------------->
+
+      <!---------------------------------
+       -------  Accordion 👇    ---------
+       --------------------------------->
+      <section data-effectJs="fade" class="2500 accordion">
+        <div class="tabs">
+          <div class="tab">
+            <input type="radio" class="accordion-input" id="rd1" name="rd" />
+            <label class="tab-label" for="rd1"
+              >Get started in less than 1 minute</label
+            >
+            <div class="tab-content">
+              Click the button below, select audience and daily impressions,
+              upload your resume and thats it! Your career profile is now being
+              advertised in our network. Once companies start showing interest
+              you will be invited to interview with the company and get the
+              necessary details on email.
+            </div>
+          </div>
+
+          <div class="tab">
+            <input type="radio" class="accordion-input" id="rd2" name="rd" />
+            <label class="tab-label" for="rd2"
+              >Lorem ipsum dolor sit amet</label
+            >
+            <div class="tab-content">
+              Click the button below, select audience and daily impressions,
+              upload your resume and thats it! Your career profile is now being
+              advertised in our network. Once companies start showing interest
+              you will be invited to interview with the company and get the
+              necessary details on email.
+            </div>
+          </div>
+          <div class="tab">
+            <input type="radio" class="accordion-input" id="rd3" name="rd" />
+            <label class="tab-label" for="rd3">Consectetur adipiscing</label>
+            <div class="tab-content">
+              Click the button below, select audience and daily impressions,
+              upload your resume and thats it! Your career profile is now being
+              advertised in our network. Once companies start showing interest
+              you will be invited to interview with the company and get the
+              necessary details on email.
+            </div>
+          </div>
+          <div class="tab">
+            <input type="radio" class="accordion-input" id="rd4" name="rd" />
+            <label class="tab-label" for="rd4"
+              >Praesent consectetur est eu</label
+            >
+            <div class="tab-content">
+              Click the button below, select audience and daily impressions,
+              upload your resume and thats it! Your career profile is now being
+              advertised in our network. Once companies start showing interest
+              you will be invited to interview with the company and get the
+              necessary details on email.
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---------------------------------
+       -------  Accordion 👆    ---------
+       --------------------------------->
+
+      <!---------------------------------
+       ---------   Pricing 👆    --------
+       --------------------------------->
+      <section class="pricing">
+        <div class="boxes">
+          <div class="800 box box1" data-effectJs="zoom-out-right">
+            <h5>
+              <span>Newbie</span>
+              <img src="assets/images/pricebox1.png" alt="" />
+            </h5>
+            <h2>25 DKK / MONTH</h2>
+            <h5 class="whats-included">What’s included</h5>
+            <p>
+              <span>150 monthly impressions </span>
+              <img src="assets/images/check.png" alt="" />
+            </p>
+            <p>
+              <span>10 new contacts per month* </span>
+              <img src="assets/images/check.png" alt="" />
+            </p>
+            <p>
+              <span>1 Interview per month* </span>
+              <img src="assets/images/check.png" alt="" />
+            </p>
+            <p>
+              <span>Campaign manager </span>
+              <img src="assets/images/check.png" alt="" />
+            </p>
+          </div>
+
+          <div class="1200 box" data-effectJs="fade">
+            <h5>
+              <span>Learner</span>
+              <img src="assets/images/pricebox2.png" alt="" />
+            </h5>
+            <h2>899 DKK / MONTH</h2>
+            <h5 class="whats-included">What’s included</h5>
+            <p>
+              <span>Newbie included</span>
+              <img src="assets/images/check.png" alt="" />
+            </p>
+            <p>
+              <span>2.500 monthly impressions</span>
+              <img src="assets/images/check.png" alt="" />
+            </p>
+            <p>
+              <span>250 new contacts per month*</span>
+              <img src="assets/images/check.png" alt="" />
+            </p>
+            <p>
+              <span>25 Interview per month*</span>
+              <img src="assets/images/check.png" alt="" />
+            </p>
+          </div>
+
+          <div class="800 box" data-effectJs="zoom-out-left">
+            <h5>
+              <span>Pitcher</span>
+              <img src="assets/images/pricebox3.png" alt="" />
+            </h5>
+            <h2>25 DKK / MONTH</h2>
+            <h5 class="whats-included">What’s included</h5>
+            <p>
+              <span>Newbie + learner included</span>
+              <img src="assets/images/check.png" alt="" />
+            </p>
+            <p>
+              <span>25.000 monthly impressions</span>
+              <img src="assets/images/check.png" alt="" />
+            </p>
+            <p>
+              <span>2.500 new contacts per month*</span>
+              <img src="assets/images/check.png" alt="" />
+            </p>
+            <p>
+              <span>250 Interview per month*</span>
+              <img src="assets/images/check.png" alt="" />
+            </p>
+          </div>
+        </div>
+        <div class="button-div">
+          <button onclick="showRegisterModals()">Okay, let’s rock!</button>
+        </div>
+      </section>
+      <!---------------------------------
+       ---------  Pricing 👇    ---------
+       --------------------------------->
+
+      <!---------------------------------
+       ------  Testimonials  👇  --------
+       --------------------------------->
+      <section class="testimonials-wrapper">
+        <div class="3000 testimonials" data-effectJs="fade">
+          <div class="testimonial show">
+            <div class="image">
+              <img src="assets/images/testimonial-1.png" alt="" />
+            </div>
+            <p class="review-text">
+              <b
+                >“Thank you, wouldn’t be able to get this job without your
+                help”</b
+              >
+              - User landing position in AI/Machine Learning.
+            </p>
+          </div>
+
+          <div class="testimonial hide">
+            <div class="image">
+              <img src="assets/images/testimonial-2.png" alt="" />
+            </div>
+            <p class="review-text">
+              Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor
+              sit amet, consectetur adipiscing elit, - User landing position in
+              AI/Machine Learning.
+            </p>
+          </div>
+
+          <div class="testimonial hide">
+            <div class="image">
+              <img src="assets/images/testimonial-3.png" alt="" />
+            </div>
+            <p class="review-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div id="testimonial-togglers">
+          <div class="toggler active"></div>
+          <div class="toggler inactive"></div>
+          <div class="toggler inactive"></div>
+        </div>
+      </section>
+      <!---------------------------------
+       ----- Testimonials  👆    --------
+       --------------------------------->
+
+      <!---------------------------------
+       ----- Login Modal  👇      --------
+       --------------------------------->
+      <div class="login-modal">
+        <div class="login-modal-overlay login-modal-overlay"></div>
+        <div class="login-modal-content">
+          <h3>Login</h3>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter email" />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" />
+          </div>
+          <button>Login</button>
+          <p><a href="#">Forgot password?</a></p>
+        </div>
+      </div>
+
+      <!---------------------------------
+       --- Register Modals  👇      -----
+       --------------------------------->
+      <div class="register-modals">
+        <div class="register-modals-container">
+          <div class="register-modal">
+            <div class="register-modal-content">
+              <div class="dots">
+                <div class="active"></div>
+                <div></div>
+                <div></div>
+              </div>
+              <h3>Alright, start by selecting your targeted audience</h3>
+              <div>
+                <label for="SelectIndustry">Select Industry</label>
+                <select name="" id="SelectIndustry">
+                  <option selected>Select Industry</option>
+                  <option value="Select Industry">Select Industry</option>
+                </select>
+              </div>
+              <div>
+                <label for="SelectKeywords">Select Keywords</label>
+                <input
+                  type="text"
+                  id="SelectKeywords"
+                  placeholder="Select Keywords React, PHP, Node"
+                />
+              </div>
+              <div class="buttons">
+                <button class="disabled-btn">Back</button>
+                <button onclick="register_next()">Next</button>
+              </div>
+            </div>
+
+            <div
+              onclick="hideRegisterModals()"
+              class="register-modals-overlay"
+            ></div>
+          </div>
+
+          <div class="register-modal">
+            <div class="register-modal-content">
+              <div class="dots">
+                <div></div>
+                <div class="active"></div>
+                <div></div>
+              </div>
+              <h3>Great! Last step is to share your career profile</h3>
+              <div id="uploadResumeWrapper">
+                <label for="UploadResume">Upload Resume</label>
+                <input id="UploadResume" type="file" />
+              </div>
+              <div>
+                <label for="linkedinProfile">Linkedin Profile</label>
+                <input
+                  id="linkedinProfile"
+                  type="text"
+                  placeholder="https://linkedin.com/in/username"
+                />
+              </div>
+
+              <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter email" />
+              </div>
+              <div class="buttons">
+                <button onclick="register_back()">Back</button>
+                <button onclick="register_next()">Next</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="register-modal">
+            <div class="register-modal-content register-modal-iframe">
+              <div class="dots">
+                <div></div>
+                <div></div>
+                <div class="active"></div>
+              </div>
+              <h3>That’s it, you did it!</h3>
+              <p>
+                Your career profile is now being advertised in our network. Once
+                companies start showing interest you will be invited to
+                interview with the company and get the necessary details on
+                email.
+              </p>
+              <p><a href="#">Remember to add a credit card:</a></p>
+
+              <iframe
+                src="https://review-94.netlify.app"
+                style="min-height: 600px; width: 400px"
+                title="Payment Process"
+                id="paymentBoxIframe"
+              ></iframe>
+
+              <div class="buttons">
+                <button onclick="register_back()">Back</button>
+                <button onclick="hideRegisterModals()">Done</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="scripts/effect.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

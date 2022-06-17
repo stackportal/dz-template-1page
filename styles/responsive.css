@@ -1,0 +1,123 @@
+@media (max-width: 1022px) {
+  .charts-illustrative > .chart2Column {
+    width: 100%;
+  }
+
+  .accordion {
+    width: 80%;
+  }
+  .boxes {
+    width: 98%;
+  }
+
+  .charts-illustrative > .chart-1 > img {
+    width: 95%;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro-text > p {
+    width: 95%;
+  }
+  .charts-illustrative {
+    padding-bottom: 120px !important;
+    gap: 100px;
+  }
+  .charts-illustrative > .chart-1 {
+    margin-bottom: 0px !important;
+  }
+  .charts-illustrative > .chart-1::after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #111325ae 66.15%);
+  }
+  .charts-illustrative > .chart2Column {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 0px;
+  }
+  .charts-illustrative > .chart-3 {
+    flex-direction: column-reverse;
+  }
+  .charts-illustrative > .chart2Column > .image {
+    width: 100%;
+  }
+  .charts-illustrative > .chart2Column > .text {
+    min-width: 350px;
+  }
+
+  .boxes {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .boxes > .box {
+    width: 500px;
+    padding: 45px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 580px) {
+  #root {
+    padding: 0px 15px;
+  }
+
+  .charts-illustrative > .chart2Column {
+    min-width: 100%;
+  }
+
+  .charts-illustrative > .chart-1 > img {
+    width: 100%;
+  }
+
+  .accordion {
+    min-width: 100%;
+  }
+  .boxes {
+    min-width: 100%;
+  }
+
+  .boxes > .box {
+    width: 100%;
+    padding: 45px;
+    margin: auto;
+  }
+
+  .intro-text > div > button {
+    width: 48%;
+    font-size: 15px;
+    padding: 0px 3px;
+  }
+  .testimonials-wrapper {
+    width: 95%;
+    margin: auto;
+  }
+  .testimonial {
+    width: 100%;
+  }
+  .login-modal-content {
+    max-width: 88% !important;
+  }
+  .login-modal-content > div {
+    min-width: 90%;
+  }
+  .login-modal-content > div > input {
+    width: 100% !important;
+  }
+
+  .register-modal-content {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 470px) {
+  .charts-illustrative > .chart2Column > .text {
+    min-width: 90%;
+  }
+
+  .login-modal-content {
+    max-width: calc(100% - 30px) !important;
+  }
+  .login-modal-content > div {
+    min-width: 92%;
+  }
+}
